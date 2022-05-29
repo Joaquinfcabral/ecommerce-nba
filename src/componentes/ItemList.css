@@ -1,0 +1,26 @@
+.estiloDeTarjeta{
+    margin: 20px;
+}
+
+.diseñoCarta{
+    background-color: aquamarine;
+
+    margin: 10px;
+    padding: 5px;
+
+    border: 5px black solid;
+}
+
+
+
+.diseñoTexto{
+    margin: 10px;
+    padding: 5px;
+
+    border: 5px #211f1f solid;
+}
+
+.estiloTexto{
+    border: 2px dashed black;
+}
+

@@ -1,8 +1,9 @@
 import { MdAddShoppingCart } from "react-icons/md";
+import './NavBar.css'
 
 const CartWidget = () => {
     return (
-            <MdAddShoppingCart></MdAddShoppingCart>
+            <MdAddShoppingCart className='iconoCartWidget' ></MdAddShoppingCart>
     )
 }
 
