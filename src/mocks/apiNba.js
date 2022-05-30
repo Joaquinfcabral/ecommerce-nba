@@ -15,7 +15,7 @@ export const customFetch = new Promise((resolve, reject) => {
     let condition = true
         setTimeout(() => {
             if (condition) {
-                resolve(productos)
+                resolve(productos[3])
             } else {
                 reject('Error en servidor')
             }

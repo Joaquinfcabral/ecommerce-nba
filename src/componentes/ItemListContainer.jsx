@@ -13,11 +13,17 @@ const ItemListContainer = () => {
     const [cargando, setCargando] = useState(false)
     
 useEffect(() =>{
+
     setCargando(true)
     customFetch 
         .then(res => setListaProductos(res))
         .catch(err => console.log(err))
         .finally(()=> setCargando (false))
+
+    /*fetch("https://api.mercadolibre.com/sites/MLA/search?q=nba")
+    .then(res => res.json())
+    .then(res => setListaProductos(res.results))
+    .catch(err => console.log(err))*/
 },[]);
 
 console.log(listaProductos)
