@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { BsFillBagPlusFill } from "react-icons/bs";
 import { BsFillBagXFill } from "react-icons/bs";

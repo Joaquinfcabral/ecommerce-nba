@@ -1,8 +1,9 @@
-
+import React from 'react';
 import ItemCount from '../componentes/ItemCount'
 import ItemList from '../componentes/ItemList'
 import {customFetch} from '../mocks/apiNba'
 import { useEffect, useState } from 'react'
+import ItemDetailContainer from './ItemDetailContainer';
 
 
 

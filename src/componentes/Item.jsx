@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Item = ({producto}) => {
     const {name, description, stock,imagen} = producto
