@@ -1,9 +1,10 @@
 import React from 'react';
 import ItemCount from '../componentes/ItemCount'
 import ItemList from '../componentes/ItemList'
-import {customFetch} from '../mocks/apiNba'
+import customFetch from '../mocks/ApiNba'
 import { useEffect, useState } from 'react'
-import ItemDetailContainer from './ItemDetailContainer';
+const { productos } = require('../mocks/productos')
+
 
 
 
@@ -14,19 +15,17 @@ const ItemListContainer = () => {
     const [cargando, setCargando] = useState(false)
     
 useEffect(() =>{
-    setCargando(true)
-    customFetch 
+    customFetch(3000, productos) 
         .then(res => setListaProductos(res))
         .catch(err => console.log(err))
         .finally(()=> setCargando (false))
 },[]);
 
-console.log(listaProductos)
 
     return (
         <>
             <h2> Bienvenidos a la mejor tienda digital </h2>
-            {cargando ? <p>Loading...</p> : <ItemList listaProductos={listaProductos}/>}
+             <ItemList listaProductos={listaProductos}/>
             <ItemCount stock={5} initial={1} onAdd={1}/>
 
         </>
